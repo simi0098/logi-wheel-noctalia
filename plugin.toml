@@ -1,0 +1,15 @@
+id           = "simi0098/logi-wheel-noctalia" # "<author>/<plugin>" - globally unique
+name         = "logi-wheel-noctalia"
+version      = "1.0.0"
+plugin_api   = 3          # mandatory: oldest plugin API level required
+author       = "simi0098"
+license      = "MIT"     # optional; defaults to MIT
+deprecated   = false     # optional; defaults to false
+icon         = "puzzle"  # optional
+description  = "A configuration widget for Logitech G923 using the logi-wheel driver."
+tags         = ["demo"]  # optional, for catalog search
+dependencies = ["logi-wheel"] # optional, external tools/packages users must install
+
+[[widget]]
+id    = "hello"
+entry = "widget.luau"
