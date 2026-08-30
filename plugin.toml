@@ -1,7 +1,7 @@
 id           = "simi0098/logi-wheel-noctalia" # "<author>/<plugin>" - globally unique
 name         = "logi-wheel-noctalia"
 version      = "1.0.0"
-plugin_api   = 3          # mandatory: oldest plugin API level required
+plugin_api   = 9          # mandatory: oldest plugin API level required
 author       = "simi0098"
 license      = "MIT"     # optional; defaults to MIT
 deprecated   = false     # optional; defaults to false
@@ -11,5 +11,25 @@ tags         = ["demo"]  # optional, for catalog search
 dependencies = ["logi-wheel"] # optional, external tools/packages users must install
 
 [[widget]]
-id    = "hello"
-entry = "widget.luau"
+id = "hello"
+entry = "hello.luau"
+
+  [[widget.setting]]
+  key = "label"
+  type = "string"
+  label_key = "settings.label.label"
+  description_key = "settings.label.description"
+  default = "Hello"
+
+  [[widget.setting]]
+  key = "glyph"
+  type = "glyph"
+  label_key = "settings.glyph.label"
+  description_key = "settings.glyph.description"
+  default = "puzzle"
+
+  [[widget.setting]]
+  key = "show_glyph"
+  type = "bool"
+  label_key = "settings.show_glyph.label"
+  default = true
